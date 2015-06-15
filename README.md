@@ -18,11 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-a = Alcatel::Session.new(:host => 'hostname', :user => 'username', :password => 'password', :debug => true|false)
-a.disable_igmp(rack, shelf, slot, port, vpi, vci)
-a.enable_igmp(rack, shelf, slot, port, vpi, vci)
-a.cmd('custom command')
-a.logout
+    a = Alcatel::Session.new(:host => 'hostname', :user => 'username', :password => 'password', :debug => true|false)
+    a.disable_igmp(rack, shelf, slot, port, vpi, vci)
+    a.enable_igmp(rack, shelf, slot, port, vpi, vci)
+    a.cmd('custom command')
+    a.logout
 
 ## Contributing
 
