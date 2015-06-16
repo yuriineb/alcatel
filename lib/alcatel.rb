@@ -29,6 +29,10 @@ module Alcatel
       @o.expect(@prompt_pat){ @i.puts command }
     end
 
+    def exit(all=nil)
+      all.preesent? ? cmd('exit all') : cmd('exit')
+    end
+
     def logout
       cmd('logout')
     end
